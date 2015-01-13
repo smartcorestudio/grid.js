@@ -45,7 +45,7 @@
 
 <div class="col-md-9 demo-container">
 
-<h1 id="default-options-local-data">Default Options + Local Data</h1>
+<h1 id="default-options-search-filter">Default Options + Search Filter</h1>
 <pre><code class="language-javascript"><span class="keyword">var</span> mydata = [
     { id: <span class="string">"1"</span>, invdate: <span class="string">"2007-10-01"</span>, name: <span class="string">"test"</span>, note: <span class="string">"note"</span>, amount: <span class="string">"200.00"</span>, tax: <span class="string">"10.00"</span>, total: <span class="string">"210.00"</span> },
     { id: <span class="string">"2"</span>, invdate: <span class="string">"2007-10-02"</span>, name: <span class="string">"test2"</span>, note: <span class="string">"note2"</span>, amount: <span class="string">"300.00"</span>, tax: <span class="string">"20.00"</span>, total: <span class="string">"320.00"</span> },
@@ -71,6 +71,8 @@ $(document).ready(<span class="function"><span class="keyword">function</span> <
             { label: <span class="string">'Total'</span>, name: <span class="string">'total'</span>, width: <span class="number">80</span> },
             { label: <span class="string">'Notes'</span>, name: <span class="string">'note'</span>, width: <span class="number">150</span> }
         ]
+    }).filterToolbar({
+        <span class="string">"stringResult"</span>: <span class="literal">true</span>
     });
 });</code></pre>
 
@@ -81,7 +83,7 @@ $(document).ready(<span class="function"><span class="keyword">function</span> <
 <div id="sub-navigation" class="nav">
     <ul class="nav">
   
-  <li class="active"><a href="local.html">Local Data</a></li>
+  <li><a href="local.html">Local Data</a></li>
   
   <li><a href="grouping.html">Grouping</a></li>
   
@@ -89,7 +91,7 @@ $(document).ready(<span class="function"><span class="keyword">function</span> <
   
   <li><a href="groupingTitle.html">Grouping Custom Title</a></li>
   
-  <li><a href="searchFilter.html">Search Filter</a></li>
+  <li class="active"><a href="searchFilter.html">Search Filter</a></li>
   
   <li><a href="searchFilterOperator.html">Search Filter with Operators</a></li>
   
@@ -101,7 +103,7 @@ $(document).ready(<span class="function"><span class="keyword">function</span> <
 
 <footer>
   <div class="container">
-  <a href="https://github.com/flack/grid.js/tree/master/docs/content/demos/local.md">View Page Source</a>
+  <a href="https://github.com/flack/grid.js/tree/master/docs/content/demos/searchFilter.md">View Page Source</a>
   </div>
 </footer>
 

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>grid.js</title>
-<link href="../grid.js-4.7.0.css" rel="stylesheet">
+<link href="../grid.js-0.1.0.css" rel="stylesheet">
 <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 <link href="../docs.css" rel="stylesheet">
@@ -71,9 +71,10 @@
 <li><code>&#39;xml&#39;</code>: we expect data in XML format</li>
 <li><code>&#39;xmlstring&#39;</code>: we expect XML data as string</li>
 <li><code>&#39;json&#39;</code>: we expect data in JSON format</li>
+<li><code>&#39;jsonp&#39;</code>: we expect data in JSON format from a different server</li>
 <li><code>&#39;jsonstring&#39;</code>: we expect JSON data as a string</li>
 <li><code>&#39;local&#39;</code>: we expect data defined at client side (array data)</li>
-<li><code>&#39;javascript&#39;</code> we expect Javascript as data</li>
+<li><code>&#39;script&#39;</code> we expect Javascript as data</li>
 <li><code>function</code> custom defined function for retrieving data</li>
 <li><code>&#39;clientSide&#39;</code> to manually load data via the data array</li>
 </ul>
@@ -698,7 +699,8 @@ when we load XML or JSON data. The measurement begins when the request is comple
   </div>
 </footer>
 
-<script src="../grid.js-4.7.0.js"></script>
+<script src="../grid.js-0.1.0.js"></script>
+<script src="../i18n/grid.locale-en.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script src="../ui.js"></script>
 </body>
